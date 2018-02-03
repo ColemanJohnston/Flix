@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="227" id="NUv-16-CzJ">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="227" id="NUv-16-CzJ" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="227"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NUv-16-CzJ" id="i4x-Qx-KVp">
@@ -57,6 +57,10 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="overviewLabel" destination="qFA-Om-blT" id="Wiu-8s-E9Y"/>
+                                                    <outlet property="titleLabel" destination="gDq-F1-dRP" id="xdq-3Y-D3B"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
