@@ -58,6 +58,7 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="MovieImageView" destination="QFB-9b-CtB" id="H4U-Mu-CJ8"/>
                                                     <outlet property="overviewLabel" destination="qFA-Om-blT" id="Wiu-8s-E9Y"/>
                                                     <outlet property="titleLabel" destination="gDq-F1-dRP" id="xdq-3Y-D3B"/>
                                                 </connections>
