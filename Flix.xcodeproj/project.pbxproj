@@ -11,6 +11,7 @@
 		6DCD38E1610A3CA275B9B86A /* Pods_Flix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D86B71901B6F6A59F534E3 /* Pods_Flix.framework */; };
 		833A358D20252D60008894CF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A358C20252D60008894CF /* MovieCell.swift */; };
 		83B439B12022D12E00FF3C44 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B439B02022D12E00FF3C44 /* NowPlayingViewController.swift */; };
+		83BE4DBB202912700099965E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE4DBA202912700099965E /* DetailViewController.swift */; };
 		83EF3F7B2022BF2000EBCA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF3F7A2022BF2000EBCA60 /* AppDelegate.swift */; };
 		83EF3F802022BF2000EBCA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EF3F7E2022BF2000EBCA60 /* Main.storyboard */; };
 		83EF3F822022BF2000EBCA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EF3F812022BF2000EBCA60 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		4D7BD6E1EA93E8E0755FA990 /* Pods-FlixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixTests/Pods-FlixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		833A358C20252D60008894CF /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		83B439B02022D12E00FF3C44 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		83BE4DBA202912700099965E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		83EF3F772022BF2000EBCA60 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EF3F7A2022BF2000EBCA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EF3F7F2022BF2000EBCA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83BE4DB8202911F50099965E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83B439B02022D12E00FF3C44 /* NowPlayingViewController.swift */,
+				83BE4DBA202912700099965E /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83BE4DB9202912130099965E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				833A358C20252D60008894CF /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		83EF3F6E2022BF2000EBCA60 = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +145,13 @@
 		83EF3F792022BF2000EBCA60 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
-				83B439B02022D12E00FF3C44 /* NowPlayingViewController.swift */,
+				83BE4DB9202912130099965E /* Views */,
+				83BE4DB8202911F50099965E /* ViewControllers */,
 				83EF3F7A2022BF2000EBCA60 /* AppDelegate.swift */,
 				83EF3F7E2022BF2000EBCA60 /* Main.storyboard */,
 				83EF3F812022BF2000EBCA60 /* Assets.xcassets */,
 				83EF3F832022BF2000EBCA60 /* LaunchScreen.storyboard */,
 				83EF3F862022BF2000EBCA60 /* Info.plist */,
-				833A358C20252D60008894CF /* MovieCell.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -452,6 +471,7 @@
 				83B439B12022D12E00FF3C44 /* NowPlayingViewController.swift in Sources */,
 				83EF3F7B2022BF2000EBCA60 /* AppDelegate.swift in Sources */,
 				833A358D20252D60008894CF /* MovieCell.swift in Sources */,
+				83BE4DBB202912700099965E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
