@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bmC-5B-kbD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bmC-5B-kbD">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,26 +32,41 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-9b-CtB">
-                                                    <rect key="frame" x="8" y="0.0" width="134" height="219"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-9b-CtB">
+                                                    <rect key="frame" x="8" y="8" width="134" height="211"/>
                                                     <color key="backgroundColor" red="0.70463376060000005" green="0.58693969499999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="211" id="cnc-dY-Yts"/>
+                                                        <constraint firstAttribute="width" constant="134" id="gqH-hF-np6"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-F1-dRP">
-                                                    <rect key="frame" x="150" y="8" width="217" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-F1-dRP">
+                                                    <rect key="frame" x="150" y="8" width="182" height="28.666666666666664"/>
+                                                    <color key="backgroundColor" red="1" green="0.37601603070820144" blue="0.91710716297705419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-Om-blT">
-                                                    <rect key="frame" x="150" y="50" width="217" height="169"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-Om-blT">
+                                                    <rect key="frame" x="150" y="44.666666666666657" width="256" height="20.333333333333343"/>
+                                                    <color key="backgroundColor" red="0.75389203740940303" green="1" blue="0.18514747461801817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qFA-Om-blT" firstAttribute="leading" secondItem="gDq-F1-dRP" secondAttribute="leading" id="GaY-SX-xkR"/>
+                                                <constraint firstItem="QFB-9b-CtB" firstAttribute="leading" secondItem="i4x-Qx-KVp" secondAttribute="leading" constant="8" id="GhB-c5-s8D"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gDq-F1-dRP" secondAttribute="trailing" constant="8" id="H1Z-wV-yCU"/>
+                                                <constraint firstItem="qFA-Om-blT" firstAttribute="top" secondItem="gDq-F1-dRP" secondAttribute="bottom" constant="8" id="HtK-2B-vdb"/>
+                                                <constraint firstItem="gDq-F1-dRP" firstAttribute="top" secondItem="QFB-9b-CtB" secondAttribute="top" id="Me2-Fn-oDc"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qFA-Om-blT" secondAttribute="bottom" constant="8" id="X6U-qb-FlA"/>
+                                                <constraint firstItem="QFB-9b-CtB" firstAttribute="top" secondItem="i4x-Qx-KVp" secondAttribute="top" constant="8" id="dVA-Pz-p9E"/>
+                                                <constraint firstItem="gDq-F1-dRP" firstAttribute="leading" secondItem="QFB-9b-CtB" secondAttribute="trailing" constant="8" id="fa1-oJ-lKg"/>
+                                                <constraint firstAttribute="bottom" secondItem="QFB-9b-CtB" secondAttribute="bottom" constant="8" id="nZq-bH-ld9"/>
+                                                <constraint firstAttribute="trailing" secondItem="qFA-Om-blT" secondAttribute="trailing" constant="8" id="wZU-Y0-7af"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="MovieImageView" destination="QFB-9b-CtB" id="H4U-Mu-CJ8"/>
@@ -211,7 +226,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Os1-vB-w28">
-                                                    <rect key="frame" x="0.0" y="0.0" width="136" height="270"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="270"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                             </subviews>
