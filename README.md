@@ -120,23 +120,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-# Lab 3 - *Name of App Here*
+# Lab 3 - *Flix*
 
-**Name of your app** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+**Flix** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
 - The following screens use AutoLayout to adapt to various orientations and screen sizes
-- [ ] Movie feed view (+3pt)
-- [ ] Detail view (+2pt)
+- [x] Movie feed view (+3pt)
+- [x] Detail view (+2pt)
 
 The following **stretch** user stories are implemented:
 
-- [ ] Dynamic Height Cells (+1)
+- [x] Dynamic Height Cells (+1)
 - [ ] Collection View AutoLayout (+2)
 
 The following **additional** user stories are implemented:
@@ -162,7 +162,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2018] [Coleman Johnston & Kristine Laranjo]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
