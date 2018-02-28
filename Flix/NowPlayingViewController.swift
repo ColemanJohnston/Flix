@@ -40,6 +40,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 self.tableView.reloadData()
             }
             self.refreshControl.endRefreshing()
+            self.activityIndicator.stopAnimating()
         }
     }
     
